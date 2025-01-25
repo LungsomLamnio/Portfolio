@@ -49,55 +49,131 @@ const Home = () => {
   };
 
   const skills = [
-    { src: "./src/assets/c.png", alt: "C", name: "C" },
-    { src: "./src/assets/java.png", alt: "Java", name: "Java" },
-    { src: "./src/assets/python.png", alt: "Python", name: "Python" },
-    { src: "./src/assets/html.png", alt: "HTML", name: "HTML" },
-    { src: "./src/assets/css.png", alt: "CSS", name: "CSS" },
     {
-      src: "./src/assets/bootstrap.png",
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826610/c_jirzmv.png",
+      alt: "C",
+      name: "C",
+    },
+    {
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826623/java_wgvyyo.png",
+      alt: "Java",
+      name: "Java",
+    },
+    {
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826625/python_psdfhw.png",
+      alt: "Python",
+      name: "Python",
+    },
+    {
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826620/html_iv688z.png",
+      alt: "HTML",
+      name: "HTML",
+    },
+    {
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826613/css_hpzeb7.png",
+      alt: "CSS",
+      name: "CSS",
+    },
+    {
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826612/bootstrap_ri1n8w.png",
       alt: "BootStrap",
       name: "BootStrap",
     },
     {
-      src: "./src/assets/tailwind.png",
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826632/tailwind_r62ddy.png",
       alt: "TailWind",
       name: "TailWind CSS",
     },
-    { src: "./src/assets/react.svg", alt: "React.js", name: "React.js" },
-    { src: "./src/assets/JS.png", alt: "JavaScript", name: "JavaScript" },
-    { src: "./src/assets/nodejs.png", alt: "Node.js", name: "Node.js" },
     {
-      src: "./src/assets/expressjs.svg",
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826625/react_v6lte7.svg",
+      alt: "React.js",
+      name: "React.js",
+    },
+    {
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826621/JS_qwudsd.png",
+      alt: "JavaScript",
+      name: "JavaScript",
+    },
+    {
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826623/nodejs_igavr0.png",
+      alt: "Node.js",
+      name: "Node.js",
+    },
+    {
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826614/expressjs_npmsok.svg",
       alt: "Express.js",
       name: "Express.js",
     },
-    { src: "./src/assets/rest.png", alt: "REST", name: "RESTful API" },
-    { src: "./src/assets/ejs.png", alt: "EJS", name: "EJS" },
     {
-      src: "./src/assets/postgresql.png",
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826629/rest_mjtteh.png",
+      alt: "REST",
+      name: "RESTful API",
+    },
+    {
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826620/ejs_krselt.png",
+      alt: "EJS",
+      name: "EJS",
+    },
+    {
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826626/postgresql_yut39f.png",
       alt: "PostgreSQL",
       name: "PostgreSQL",
     },
-    { src: "./src/assets/mysql.png", alt: "MySQL", name: "SQL" },
-    { src: "./src/assets/mongodb.png", alt: "MongoDB", name: "MongoDB" },
-    { src: "./src/assets/git.png", alt: "Git", name: "Git" },
-    { src: "./src/assets/github.png", alt: "GitHub", name: "GitHub" },
-
-    { src: "./src/assets/vscode.png", alt: "VS Code", name: "VS Code" },
-    { src: "./src/assets/eclipse.png", alt: "Eclipse", name: "Eclipse" },
-    { src: "./src/assets/pycharm.png", alt: "PyCharm", name: "PyCharm" },
-    { src: "./src/assets/intellij.png", alt: "IntelliJ", name: "IntelliJ" },
+    {
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826622/mysql_jd7ggz.png",
+      alt: "MySQL",
+      name: "SQL",
+    },
+    {
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826622/mongodb_ln5qu3.png",
+      alt: "MongoDB",
+      name: "MongoDB",
+    },
+    {
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826617/git_ian2xg.png",
+      alt: "Git",
+      name: "Git",
+    },
+    {
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826617/github_ebmelw.png",
+      alt: "GitHub",
+      name: "GitHub",
+    },
 
     {
-      src: "./src/assets/codeblocks.png",
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826638/vscode_xfvvcw.png",
+      alt: "VS Code",
+      name: "VS Code",
+    },
+    {
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826614/eclipse_obce1w.png",
+      alt: "Eclipse",
+      name: "Eclipse",
+    },
+    {
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826625/pycharm_u54g0k.png",
+      alt: "PyCharm",
+      name: "PyCharm",
+    },
+    {
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826621/intellij_k1p69g.png",
+      alt: "IntelliJ",
+      name: "IntelliJ",
+    },
+
+    {
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826617/codeblocks_ifed3o.png",
       alt: "Code Blocks",
       name: "Code Blocks",
     },
-    { src: "./src/assets/apache.png", alt: "Apache", name: "Apache Tomcat" },
+    {
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826414/apache_twgeqm.png",
+      alt: "Apache",
+      name: "Apache Tomcat",
+    },
 
     {
-      src: "./src/assets/canva.png",
+      src: "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826614/canva_fpwvby.png",
       alt: "Canva",
       name: "Canva",
     },
@@ -228,7 +304,10 @@ const Home = () => {
             </div>
           </div>
           <div className="intro-elements">
-            <img src="./src/assets/spaceboy.png" alt="photo" />
+            <img
+              src="https://res.cloudinary.com/dgmftp80m/image/upload/v1737826646/spaceboy_bvflhq.png"
+              alt="photo"
+            />
           </div>
         </div>
       </section>
@@ -276,7 +355,7 @@ const Home = () => {
             {/* Company Logo */}
             <div style={{ marginBottom: "15px", textAlign: "center" }}>
               <img
-                src="./src/assets/gdgBanner.png" // Replace this with the correct path to your logo
+                src="https://res.cloudinary.com/dgmftp80m/image/upload/v1737826616/gdgBanner_qrxjnr.png" // Replace this with the correct path to your logo
                 alt="Google Developers Group"
                 style={{
                   height: "100px", // Increased height for the logo
@@ -346,21 +425,24 @@ const Home = () => {
           {[
             {
               title: "Intelligent Traffic Management System",
-              image: "./src/assets/traffic.jpg",
+              image:
+                "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826627/traffic_gqipdq.jpg",
               description:
                 "The Traffic Light Management System is designed to manage and simulate traffic light operations based on real-time traffic data. It adjusts traffic light cycles dynamically using APIs like Google Roads and Geocoding, displaying results through an interactive User Interface.",
               link: "https://github.com/LungsomLamnio/SmartIndiaHackathon",
             },
             {
               title: "Online Booking Platform for Hotels and Stays",
-              image: "./src/assets/hotel.jpg",
+              image:
+                "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826617/hotel_xzgqfi.jpg",
               description:
                 "Effortlessly discover and book your perfect stay. This platform offers a seamless experience for exploring a wide range of hotels, complete with real-time pricing, availability, and personalized filters. Designed with user convenience in mind, it ensures secure payments and a smooth booking journey from start to finish.",
               link: "https://github.com/LungsomLamnio/Wanderlust",
             },
             {
               title: "Digital Platform to Support Local Artisans",
-              image: "./src/assets/artisan.png", // Replace with the path to the appropriate image
+              image:
+                "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826675/artisan_ti6ept.png", // Replace with the path to the appropriate image
               description:
                 "A vibrant online marketplace connecting skilled artisans with a global audience. This platform celebrates creativity and craftsmanship, empowering local talent to share their unique handmade creations. By fostering fair trade and preserving cultural heritage.",
               link: "https://github.com/LungsomLamnio/ByteHacks",
