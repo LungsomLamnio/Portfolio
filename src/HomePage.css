@@ -1,0 +1,627 @@
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Section */
+header {
+  background-color: #ffffff;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #333;
+  float: left;
+  margin-left: 20px;
+}
+
+header nav {
+  float: right;
+  margin-right: 20px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #0078d4;
+}
+
+/* Clearfix to clear floats */
+header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #0078d4;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Section Styles - Apply a uniform background color */
+section {
+  padding: 60px 20px;
+  background-color: #f8f9fa; /* Uniform background color */
+}
+
+section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0078d4;
+}
+
+section p,
+section ul {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #555;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section ul li {
+  margin-bottom: 10px;
+}
+
+/* Specific section overrides (optional) */
+#skills,
+#experience,
+#projects,
+#blogs,
+#contact {
+  background-color: #f8f9fa; /* Same as general sections */
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+header .logo {
+  font-size: 2rem; /* Adjust size */
+  font-weight: bold;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+  font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0078d4;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #0078d4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #005bb5;
+}
+
+/* Status Message */
+.status-message {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1rem;
+  color: #0078d4;
+}
+
+/* Intro Section */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f9f9f9; /* Optional background color */
+  padding: 20px; /* Add some padding */
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f9f9f9; /* Optional background color */
+  padding: 20px; /* Add some padding */
+}
+
+.intro-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%; /* Adjust to control the width */
+  max-width: 1400px; /* Limit the max width */
+  margin: 0 auto; /* Center content horizontally */
+}
+
+.intro-text {
+  flex: 1;
+  text-align: left;
+  padding: 20px; /* Add spacing */
+}
+
+.intro-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.email-me {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.email-me:hover {
+  background-color: #444;
+}
+
+.intro-graphic {
+  flex: 1; /* Adjust size proportionally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  width: auto; /* Flexible width */
+  height: 50vh; /* Reduce height to medium size */
+  max-width: 50vh; /* Keep a square aspect ratio */
+  aspect-ratio: 1 / 1; /* Ensure square shape */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* In your HomePage.css or a global stylesheet */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+}
+
+.intro-text {
+  width: 50%; /* Left side will take 50% */
+  padding: 20px;
+}
+
+.intro-graphic {
+  width: 50%; /* Right side will take 50% */
+  height: 100vh;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column; /* Stack the sections vertically on smaller screens */
+    height: auto;
+  }
+
+  .intro-text,
+  .intro-graphic {
+    width: 100%; /* Both sections take full width on small screens */
+    height: auto;
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: center; /* Align links to the left */
+  gap: 15px; /* Space between icons */
+  margin-top: 20px; /* Add spacing above the links */
+}
+
+.social-links a {
+  color: #555;
+  font-size: 1.8rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #0078d4; /* Change color on hover */
+  transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.card {
+  min-width: 250px; /* Ensures cards have a consistent size */
+  flex-shrink: 0; /* Prevents cards from shrinking */
+}
+
+.skills .card img {
+  width: 80px; /* Set a consistent width */
+  height: 80px; /* Set a consistent height */
+  object-fit: contain; /* Ensures images fit within the defined space without distortion */
+  margin: 0 auto; /* Center the image horizontally */
+  display: block; /* Ensures no extra inline space */
+}
+
+.skills .card img {
+  width: 100px; /* Increased size for logos */
+  height: 100px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Apply consistent spacing to all sections */
+section {
+  padding: 60px 20px; /* Ensure equal padding for top and bottom */
+  margin: 0 auto; /* Center align content */
+}
+
+/* General styling for sections to maintain equal spacing */
+section {
+  padding: 60px 20px; /* Equal padding for top and bottom */
+  margin: 0 auto; /* Center align content */
+}
+
+/* Add separator line for middle sections only */
+/* Add separator line for sections except the first and last */
+section:not(:first-of-type):not(:last-of-type)::after {
+  content: "";
+  display: block;
+  width: 80%; /* Width of the line */
+  height: 2px; /* Thickness of the line */
+  margin: 40px auto; /* Space around the line */
+  background: linear-gradient(90deg, #00c6ff, #0072ff); /* Gradient effect */
+  border-radius: 5px; /* Rounded edges */
+}
+
+section:last-of-type::after {
+  content: "";
+  display: block;
+  width: 80%; /* Adjust the width of the line */
+  height: 2px; /* Adjust the thickness of the line */
+  margin: 40px auto; /* Add space above/below the line */
+  background: linear-gradient(90deg, #00c6ff, #0072ff); /* Gradient color */
+  border-radius: 5px; /* Rounded edges */
+}
+
+/* HomePage.css */
+
+/* Scrolling Container */
+.scroll-container {
+  display: flex;
+  overflow: hidden; /* Hide overflowing content */
+  position: relative;
+  width: 100%; /* Full-width container */
+  background-color: #f8f9fa; /* Optional background */
+}
+
+.scroll-content {
+  display: flex;
+  gap: 20px; /* Space between cards */
+  animation: scroll 15s linear infinite; /* Smooth loop animation */
+}
+
+.card {
+  flex: 0 0 auto; /* Prevent cards from shrinking */
+  width: 150px; /* Adjust card width */
+  text-align: center;
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-container {
+  overflow: hidden;
+  position: relative;
+  height: 200px; /* Adjust height as needed */
+  width: 100%; /* Adjust width if necessary */
+}
+
+.scroll-content {
+  display: flex;
+  animation: scroll-seamless 20s linear infinite; /* Adjust duration for speed */
+}
+
+@keyframes scroll-seamless {
+  0% {
+    transform: translateX(0); /* Start at the first card */
+  }
+  100% {
+    transform: translateX(-50%); /* Shift by half the total width */
+  }
+}
+
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px; /* Add some spacing around the section */
+}
+
+.intro-content {
+  display: flex;
+  width: 100%;
+  gap: 20px; /* Space between text and image */
+}
+
+.intro-text {
+  flex: 1; /* Take up equal space */
+  text-align: left; /* Align text to the left */
+}
+
+.intro-text h1,
+.intro-text p,
+.intro-text h2 {
+  margin: 10px 0; /* Add spacing between elements */
+}
+
+.social-links a {
+  margin-right: 10px; /* Space between social icons */
+  font-size: 1.5rem; /* Icon size */
+}
+
+.intro-elements {
+  flex: 1; /* Take up equal space */
+  display: flex;
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+}
+
+.intro-elements img {
+  width: 80%; /* Reduce the size of the image */
+  max-width: 300px; /* Add a max-width to prevent it from getting too large */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure image fits nicely */
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.intro-content {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.intro-text {
+  flex: 1;
+  text-align: left;
+}
+
+.intro-text h1,
+.intro-text p,
+.intro-text h2 {
+  margin: 10px 0;
+}
+
+.social-links a {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.intro-elements {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.intro-elements img {
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+
+  /* Floating animation */
+  animation: float 4s ease-in-out infinite;
+}
+
+.intro-text {
+  flex: 1;
+  text-align: left; /* Ensures the content is aligned left */
+  display: flex; /* Flexbox allows you to align children */
+  flex-direction: column; /* Ensures the content flows vertically */
+  align-items: flex-start; /* Aligns all children to the left */
+}
+
+.typing-effect-container {
+  margin-top: 20px; /* Adjusts the space between the text and typing effect */
+}
+
+#hello,
+#im,
+#name {
+  font-weight: normal; /* Remove boldness */
+  color: black !important;
+}
+
+#hello {
+  font-family: "Macondo";
+}
+
+/* Apply Caveat font to #im */
+#im {
+  font-family: "Caveat";
+}
+
+.intro-text {
+  margin-left: 10%; /* Shifts the content to the right */
+}
+
+.intro-content {
+  display: flex;
+  justify-content: flex-end; /* Aligns content to the right */
+  align-items: flex-start; /* Aligns content to the top */
+  height: 100vh; /* Full height of the viewport */
+  letter-spacing: 2px;
+}
+
+.intro-text,
+.intro-elements {
+  margin-top: 50px; /* Shift text upwards */
+  margin-right: 20px; /* Optional: Add margin to the right if needed */
+}
+
+#desc {
+  font-family: "Shadows Into Light", cursive; /* Apply the Shadows Into Light font */
+  font-size: 24px; /* Adjust font size as needed */
+  color: #000; /* Set text color (optional, adjust as needed) */
+  line-height: 1.5; /* Adjust line height for readability */
+}
+
+.skills .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px; /* Increase padding for larger cards */
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  width: 180px; /* Adjust the width to increase the card size */
+  height: 180px; /* Adjust the height to increase the card size */
+}
