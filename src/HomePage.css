@@ -379,12 +379,6 @@ section {
   margin: 0 auto; /* Center align content */
 }
 
-/* General styling for sections to maintain equal spacing */
-section {
-  padding: 60px 20px; /* Equal padding for top and bottom */
-  margin: 0 auto; /* Center align content */
-}
-
 /* Add separator line for middle sections only */
 /* Add separator line for sections except the first and last */
 section:not(:first-of-type):not(:last-of-type)::after {
@@ -443,7 +437,17 @@ section:last-of-type::after {
 
 .scroll-content {
   display: flex;
-  animation: scroll-seamless 20s linear infinite; /* Adjust duration for speed */
+  gap: 20px;
+  animation: scroll 120s linear infinite; /* Increase duration for slower speed */
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%); /* Moves left to create scrolling effect */
+  }
 }
 
 @keyframes scroll-seamless {
