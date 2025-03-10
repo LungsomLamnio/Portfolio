@@ -4,7 +4,7 @@ import Typed from "typed.js";
 const TypingEffect = () => {
   useEffect(() => {
     const options = {
-      strings: ["Web Developer", "MERN STACK"], // The words to be typed
+      strings: ["Web Developer", "MEAN STACK"], // The words to be typed
       typeSpeed: 150, // Slower typing speed (increase the value for slower typing)
       backSpeed: 50, // Speed of erasing
       backDelay: 1000, // Delay before erasing starts
