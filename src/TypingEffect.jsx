@@ -16,6 +16,7 @@ const TypingEffect = () => {
     const typed = new Typed("#element", options);
 
     // Clean up the Typed instance when the component unmounts
+    //hello
     return () => {
       typed.destroy();
     };
