@@ -429,7 +429,7 @@ const Home = () => {
                 "https://res.cloudinary.com/dgmftp80m/image/upload/v1737826627/traffic_gqipdq.jpg",
               description:
                 "The Traffic Light Management System is designed to manage and simulate traffic light operations based on real-time traffic data. It adjusts traffic light cycles dynamically using APIs like Google Roads and Geocoding, displaying results through an interactive User Interface.",
-              link: "https://github.com/LungsomLamnio/Intellident-Traffic-Managemetn-System",
+              link: "https://github.com/LungsomLamnio/Intelligent-Traffic-Management-System",
             },
             {
               title: "Online Booking Platform for Hotels and Stays",
